@@ -1,0 +1,2 @@
+cd C:\Users\pc\eclipse-workspace\Project_Playwright\
+mvn clean test

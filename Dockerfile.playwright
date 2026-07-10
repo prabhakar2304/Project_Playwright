@@ -1,0 +1,23 @@
+FROM mcr.microsoft.com/playwright/java:v1.57.0-noble
+
+# Install Playwright dependencies
+RUN apt-get update && apt-get install -y \
+    xvfb \
+    wget \
+    curl \
+    unzip \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+COPY pom.xml .
+
+RUN mvn dependency:go-offline
+
+COPY . .
+
+RUN mvn exec:java \
+    -Dexec.mainClass=com.microsoft.playwright.CLI \
+    -Dexec.args="install --with-deps"
+
+CMD ["xvfb-run","-a","mvn","test"]

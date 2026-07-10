@@ -1,0 +1,12 @@
+Main_project\End_to_End.class
+Utils\Excelutils.class
+Utils\Data_Providers.class
+Page_Object_Model\Base_page_class.class
+Main_project\Base_class.class
+Page_Object_Model\Login_page.class
+Main_project\CrossBrowser.class
+Main_project\Login_With_Data_Provider.class
+Main_project\Registration.class
+Main_project\Login_And_Logout.class
+Utils\ExtentManager.class
+Page_Object_Model\Registration_page.class

@@ -1,2 +1,3 @@
 cd C:\Users\pc\eclipse-workspace\Project_Playwright\
 mvn clean test
+https://github.com/prabhakar2304/Project_Playwright.git"   //GIT

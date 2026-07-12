@@ -65,7 +65,7 @@ public class Base_class {
 			bt=pw.webkit();
 		}
 		
-		 browser=bt.launch(new BrowserType.LaunchOptions().setHeadless(true).setSlowMo(5000));
+		 browser=bt.launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(1000));
 		 page=browser.newPage();
 		 page.navigate(properties.getProperty("appURL"));
 	}

@@ -22,7 +22,7 @@ public class Registration_page extends Base_page_class {
 	 public Registration_page(Page page)
 	 {
 		 super(page);
-         this.page=page;
+        // this.page=page;
     	 newUserLinkLocator=page.getByText("New user? Signup");
 		 nameLocator=page.locator("[type='text']");
 		 emailLocatorReg_page=page.locator("[name='email']");

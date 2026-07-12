@@ -1,133 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-09T16:03:01 IST" name="Failed suite [Suite]" finished-at="2026-07-09T16:03:01 IST" duration-ms="152">
+  <suite started-at="2026-07-12T09:27:25 IST" name="Default suite" finished-at="2026-07-12T09:28:24 IST" duration-ms="58275">
     <groups>
       <group name="Master">
-        <method signature="Login_And_Logout.login()[pri:0, instance:Main_project.Login_And_Logout@a1153bc]" name="login" class="Main_project.Login_And_Logout"/>
-        <method signature="Login_And_Logout.login()[pri:0, instance:Main_project.Login_And_Logout@198b6731]" name="login" class="Main_project.Login_And_Logout"/>
-        <method signature="Login_And_Logout.login()[pri:0, instance:Main_project.Login_And_Logout@3c9754d8]" name="login" class="Main_project.Login_And_Logout"/>
+        <method signature="Addingcourse.Addingcourse()[pri:0, instance:Main_project.Addingcourse@a1153bc]" name="Addingcourse" class="Main_project.Addingcourse"/>
       </group> <!-- Master -->
       <group name="Sanity">
-        <method signature="Login_And_Logout.login()[pri:0, instance:Main_project.Login_And_Logout@a1153bc]" name="login" class="Main_project.Login_And_Logout"/>
-        <method signature="Login_And_Logout.login()[pri:0, instance:Main_project.Login_And_Logout@198b6731]" name="login" class="Main_project.Login_And_Logout"/>
-        <method signature="Login_And_Logout.login()[pri:0, instance:Main_project.Login_And_Logout@3c9754d8]" name="login" class="Main_project.Login_And_Logout"/>
+        <method signature="Addingcourse.Addingcourse()[pri:0, instance:Main_project.Addingcourse@a1153bc]" name="Addingcourse" class="Main_project.Addingcourse"/>
       </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="Addingcourse.Addingcourse()[pri:0, instance:Main_project.Addingcourse@a1153bc]" name="Addingcourse" class="Main_project.Addingcourse"/>
+      </group> <!-- Regression -->
     </groups>
-    <test started-at="2026-07-09T16:03:01 IST" name="FireFoxTest(failed)" finished-at="2026-07-09T16:03:01 IST" duration-ms="150">
-      <class name="Main_project.Login_And_Logout">
-        <test-method signature="login()[pri:0, instance:Main_project.Login_And_Logout@198b6731]" started-at="2026-07-09T16:03:01 IST" name="login" finished-at="2026-07-09T16:03:01 IST" duration-ms="40" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.apache.logging.log4j.Logger.info(String)" because "this.logger" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.logging.log4j.Logger.info(String)" because "this.logger" is null
-at Main_project.Login_And_Logout.login(Login_And_Logout.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+    <test started-at="2026-07-12T09:27:25 IST" name="Default test" finished-at="2026-07-12T09:28:24 IST" duration-ms="58275">
+      <class name="Main_project.Addingcourse">
+        <test-method is-config="true" signature="Setup(java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:Main_project.Addingcourse@a1153bc]" started-at="2026-07-12T09:27:26 IST" name="Setup" finished-at="2026-07-12T09:27:59 IST" duration-ms="33311" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[public void Main_project.Addingcourse.Addingcourse()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-      </class> <!-- Main_project.Login_And_Logout -->
-    </test> <!-- FireFoxTest(failed) -->
-    <test started-at="2026-07-09T16:03:01 IST" name="ChromeTest(failed)" finished-at="2026-07-09T16:03:01 IST" duration-ms="152">
-      <class name="Main_project.Login_And_Logout">
-        <test-method signature="login()[pri:0, instance:Main_project.Login_And_Logout@a1153bc]" started-at="2026-07-09T16:03:01 IST" name="login" finished-at="2026-07-09T16:03:01 IST" duration-ms="40" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.apache.logging.log4j.Logger.info(String)" because "this.logger" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.logging.log4j.Logger.info(String)" because "this.logger" is null
-at Main_project.Login_And_Logout.login(Login_And_Logout.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- Setup -->
+        <test-method signature="Addingcourse()[pri:0, instance:Main_project.Addingcourse@a1153bc]" started-at="2026-07-12T09:27:59 IST" name="Addingcourse" finished-at="2026-07-12T09:28:22 IST" duration-ms="23161" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-      </class> <!-- Main_project.Login_And_Logout -->
-    </test> <!-- ChromeTest(failed) -->
-    <test started-at="2026-07-09T16:03:01 IST" name="SafariTest(failed)" finished-at="2026-07-09T16:03:01 IST" duration-ms="140">
-      <class name="Main_project.Login_And_Logout">
-        <test-method signature="login()[pri:0, instance:Main_project.Login_And_Logout@3c9754d8]" started-at="2026-07-09T16:03:01 IST" name="login" finished-at="2026-07-09T16:03:01 IST" duration-ms="41" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.apache.logging.log4j.Logger.info(String)" because "this.logger" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.logging.log4j.Logger.info(String)" because "this.logger" is null
-at Main_project.Login_And_Logout.login(Login_And_Logout.java:22)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- Addingcourse -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Main_project.Addingcourse@a1153bc]" started-at="2026-07-12T09:28:22 IST" name="tearDown" finished-at="2026-07-12T09:28:24 IST" duration-ms="1679" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Addingcourse status=SUCCESS method=Addingcourse.Addingcourse()[pri:0, instance:Main_project.Addingcourse@a1153bc] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-      </class> <!-- Main_project.Login_And_Logout -->
-    </test> <!-- SafariTest(failed) -->
-  </suite> <!-- Failed suite [Suite] -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- Main_project.Addingcourse -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

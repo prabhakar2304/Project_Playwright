@@ -19,6 +19,7 @@ import org.testng.internal.annotations.ITest;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.microsoft.playwright.Browser;
+import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
@@ -31,6 +32,7 @@ public class Base_class {
 	//protected final Logger logger = LogManager.getLogger(getClass());
 	public Logger logger;
 	public  Browser browser;
+	public BrowserContext brwsrContext;
 	public  Page page;
 	public  Playwright pw;
 	public Properties properties;
@@ -66,7 +68,8 @@ public class Base_class {
 		}
 		
 		 browser=bt.launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(1000));
-		 page=browser.newPage();
+		 brwsrContext=browser.newContext();
+		 page=brwsrContext.newPage();
 		 page.navigate(properties.getProperty("appURL"));
 	}
 	/*@Test

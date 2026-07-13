@@ -62,7 +62,7 @@ public class Adding_courses extends Base_page_class {
 			SignoutLocator=page.getByText("Sign out");
      }
      
-     public void setEmail(String email)
+        public void setEmail(String email)
 	    {
 	    	emailLocator.fill(email);
 	    }

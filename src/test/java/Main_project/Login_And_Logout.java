@@ -29,11 +29,11 @@ public class Login_And_Logout extends Base_class{
 		
          Login_page loginpage = new Login_page(page);
          
-         loginpage.setEmail(properties.getProperty("email"));
+         loginpage.setEmail(prop.getProperty("email"));
          
          logger.info("*****Entering the Email Details*****");
          
-         loginpage.setPassword(properties.getProperty("password"));
+         loginpage.setPassword(prop.getProperty("password"));
          
          logger.info("*****Entering the Password Details*****");
          

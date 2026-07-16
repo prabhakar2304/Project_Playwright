@@ -18,8 +18,8 @@ public class Addingcourse extends Base_class{
 		try 
 		{
 			Adding_courses addcourse=new Adding_courses(page);
-			addcourse.setEmail(properties.getProperty("email"));
-			addcourse.setPassword(properties.getProperty("password"));
+			addcourse.setEmail(prop.getProperty("email"));
+			addcourse.setPassword(prop.getProperty("password"));
 			addcourse.clickonbutton();
 			addcourse.clickmanageoption();
 			addcourse.clickmanagecourse();

@@ -17,8 +17,8 @@ public class Addingcategory extends Base_class
 		try 
 		{    	
 		Adding_category addcategory=new Adding_category(page);
-		addcategory.setEmail(properties.getProperty("email"));
-		addcategory.setPassword(properties.getProperty("password"));
+		addcategory.setEmail(prop.getProperty("email"));
+		addcategory.setPassword(prop.getProperty("password"));
 		addcategory.clickonbutton();
 		addcategory.clickmanageoption();
 		Page newpage=brwsrContext.waitForPage(()-> addcategory.clickmanagecategory());

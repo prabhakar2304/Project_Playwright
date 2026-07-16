@@ -35,7 +35,7 @@ public class Base_class {
 	public BrowserContext brwsrContext;
 	public  Page page;
 	public  Playwright pw;
-	public Properties properties;
+	public Properties prop;
 	protected ExtentReports extent;
 	protected ExtentTest test;
 	@Parameters({"os","browsername"})
@@ -46,8 +46,8 @@ public class Base_class {
 		extent= ExtentManager.getInstance();
 		test=extent.createTest(method.getName());
 		FileReader fReader = new FileReader("./src//test//resources//config.properties");
-		properties=new Properties();
-		properties.load(fReader);
+		prop=new Properties();
+		prop.load(fReader);
 	    pw=Playwright.create();
 		BrowserType bt = null;
 		//System.out.println("Inside Setup");
@@ -70,7 +70,7 @@ public class Base_class {
 		 browser=bt.launch(new BrowserType.LaunchOptions().setHeadless(false).setSlowMo(1000));
 		 brwsrContext=browser.newContext();
 		 page=brwsrContext.newPage();
-		 page.navigate(properties.getProperty("appURL"));
+		 page.navigate(prop.getProperty("appURL"));
 	}
 	/*@Test
 	public void login()
